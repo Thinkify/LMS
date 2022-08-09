@@ -1,12 +1,19 @@
 Loan management system enpoints
 
 1. Users
+
+    Get all users registered
     
-    GET /users/getusers 
-        Get all users registered
-    GET /users/getuser/{emailid}
-        Get users by email ID
-    POST /user/registeruser
+        GET /users/getusers 
+
+    Get users by email ID
+    
+        GET /users/getuser/{emailid}
+        
+    Register a new user
+    
+        POST /user/registeruser
+    
         body {
             email:string
             contact:string
@@ -19,13 +26,23 @@ Loan management system enpoints
 
 2. Application
 
-    GET /applications/getapplication/{applicationId}
-        Get application by id
-    GET /applications/getuserapplication/{userId}
-        Get application by userId
-    GET /applcations/getapplications
-        Get all applications
-    POST /applications/createapplication
+    
+    Get application by id
+        
+        GET /applications/getapplication/{applicationId}
+        
+    Get application by userId
+    
+        GET /applications/getuserapplication/{userId}
+       
+    Get all applications
+        
+        GET /applcations/getapplications
+        
+    Create a new application
+        
+        POST /applications/createapplication
+        
         body {
             applicationType: string
             userId: mongoId
