@@ -1,0 +1,4 @@
+{
+  "userAlreadyExists": "User Already Exists",
+  "mongoConnectionSuccess": "MongoDB Connected"
+}
