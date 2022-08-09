@@ -13,7 +13,7 @@ Loan management system enpoints
             firstName:string
             lastName:string
             dateOfBirth: date
-            adhaar: number
+            adhaar: number 
             pan: string
         }
 
